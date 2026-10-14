@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lab 04 - Order Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      color: #333;
+    }
+
+    .lab-header {
+      margin-bottom: 25px;
+    }
+
+    .lab-header h2 {
+      margin: 0 0 8px 0;
+      font-size: 24px;
+      font-weight: 500;
+    }
+
+    .lab-header h3 {
+      margin: 0 0 12px 0;
+      font-size: 20px;
+      color: #1a2a4b;
+    }
+
+    .lab-header p {
+      margin: 0;
+      color: #555;
+      font-size: 14px;
+    }
+
+    .form-container {
+      max-width: 450px;
+      margin: 0 auto;
+    }
+
+    .form-title {
+      text-align: center;
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 26px;
+      font-weight: bold;
+      margin-bottom: 25px;
+    }
+
+    .form-group {
+      margin-bottom: 12px;
+    }
+
+    label {
+      display: block;
+      font-size: 13px;
+      font-weight: bold;
+      margin-bottom: 5px;
+      color: #111;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="number"],
+    input[type="date"],
+    textarea {
+      width: 100%;
+      padding: 8px 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      font-size: 13px;
+      outline: none;
+      background-color: #fff;
+    }
+
+    input::placeholder,
+    textarea::placeholder {
+      color: #888;
+      font-size: 12px;
+    }
+
+    textarea {
+      height: 140px;
+      resize: vertical;
+      font-family: monospace, sans-serif;
+    }
+
+    .submit-btn {
+      width: 100%;
+      background-color: #000;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      padding: 10px;
+      font-size: 13px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    .submit-btn:hover {
+      background-color: #222;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="lab-header">
+    <h2>Lab 4</h2>
+    <h3>Lab 04: CSS Structure and Properties</h3>
+    <p>Create an HTML form for placing an order to request auto parts and style it in CSS.</p>
+  </div>
+
+  <div class="form-container">
+    <div class="form-title">Great Auto Parts - Order Form</div>
+
+    <form action="#" method="POST">
+      <div class="form-group">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" placeholder="Enter your first name">
+      </div>
+
+      <div class="form-group">
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" placeholder="Enter your last name">
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email address">
+      </div>
+
+      <div class="form-group">
+        <label for="phone">Phone number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+      </div>
+
+      <div class="form-group">
+        <label for="make">Make:</label>
+        <input type="text" id="make" name="make" placeholder="Make">
+      </div>
+
+      <div class="form-group">
+        <label for="model">Model:</label>
+        <input type="text" id="model" name="model" placeholder="Model">
+      </div>
+
+      <div class="form-group">
+        <label for="year">Year:</label>
+        <input type="number" id="year" name="year" placeholder="Year">
+      </div>
+
+      <div class="form-group">
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date">
+      </div>
+
+      <div class="form-group">
+        <label for="sparePart">Spare Part:</label>
+        <input type="text" id="sparePart" name="sparePart" placeholder="Enter the spare part you need">
+      </div>
+
+      <div class="form-group">
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" name="quantity" placeholder="Enter the quantity of the spare part you need">
+      </div>
+
+      <div class="form-group">
+        <label for="comment">Comment:</label>
+        <textarea id="comment" name="comment" placeholder="Enter your comment"></textarea>
+      </div>
+
+      <button type="submit" class="submit-btn">Submit</button>
+    </form>
+  </div>
+
+</body>
+</html>
